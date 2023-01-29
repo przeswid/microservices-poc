@@ -7,10 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @Log4j2
 @SpringBootApplication
-public class MainApplication implements CommandLineRunner {
+public class ApiGatewayMainApplication implements CommandLineRunner {
 
   public static void main(String[] args) {
-    SpringApplication.run(MainApplication.class, args);
+    SpringApplication.run(ApiGatewayMainApplication.class, args);
   }
 
   @Override

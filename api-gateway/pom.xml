@@ -9,13 +9,18 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>org.pswida</groupId>
     <artifactId>api-gateway</artifactId>
 
     <properties>
-        <start-class>org.pswida.apigateway.MainApplication</start-class>
+        <start-class>org.pswida.apigateway.ApiGatewayMainApplication</start-class>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+    </dependencies>
 
     <build>
         <finalName>${project.artifactId}</finalName>
